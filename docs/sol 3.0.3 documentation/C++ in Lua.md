@@ -166,7 +166,7 @@ That script should run fine now, and you can observe and play around with the va
 
 This is a powerful way to allow reuse of C++ code from Lua beyond just registering functions, and should get you on your way to having more complex classes and data structures! In the case that you need more customization than just usertypes, however, you can customize sol to behave more fit to your desires by using the desired [customization and extension structures](https://sol2.readthedocs.io/en/latest/tutorial/customization.html).
 
-不仅仅是注册函数，在 Lua 层实现对 C++ 代码的重用也有强大的支持。你真的可以用你自己（喜欢）的方式定义复杂的类和结构！在这中情况下，除了使用 usertypes，你需要更多自定义的方式，但是，你得通过使用预期的[自定义模式和结构的扩展性](https://sol2.readthedocs.io/en/latest/tutorial/customization.html)来自定义 sol 的行为。
+不仅仅是注册函数，在 Lua 层实现对 C++ 代码的重用也有强大的支持。你真的可以用你自己（喜欢）的方式定义复杂的类和结构！在这中情况下，比起 usertypes，你需要更自由的自定义方式，然而，你得通过使用预期的[可定制、可扩展结构](https://sol2.readthedocs.io/en/latest/tutorial/customization.html) （其实就是重写一套对结构体类型的 check/get/push API）来自定义 sol ，使其更符合你的需求。
 
 You can check out this code and more complicated code at the [examples directory](https://github.com/ThePhD/sol2/tree/develop/examples) by looking at the `usertype_`-prefixed examples.
 
